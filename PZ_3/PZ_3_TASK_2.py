@@ -52,3 +52,6 @@ def task_2():
 if __name__ == "__main__":
     while True:
         main()
+        break_input = input("Продолжить? (y / n): ")
+        if break_input.lower() == "n":
+            break
