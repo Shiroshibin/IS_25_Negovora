@@ -56,3 +56,5 @@ if __name__ == "__main__":
         break_input = input("Продолжить? (y / n): ")
         if break_input.lower() == "n":
             break
+        elif break_input.lower() == "y":
+            print("Новый запуск")
