@@ -22,8 +22,7 @@ R = √((x^2 – x^1)^2 + (у^2 – y^1)^2)
 """
 
 # Генерим данные
-# N = randint(5, 10)
-N = 10
+N = randint(5, 10)
 L = randint(1, N - 1)
 K = randint(1, (L - 1) if L != 1 else 1)
 
@@ -34,13 +33,15 @@ print(f"K = {K}")
 # Создаем список и заполняем его
 data_list = list()
 for i in range(0, N):
-    # data_list.append(randint(0, 10))
-    data_list.append(i)
+    data_list.append(randint(0, 10))
 
+print(f"data_list = {data_list}")
 
-
+# Удаляем ненужные числа
 for i in range(K - 1 , L):
-    print(data_list[i])
+    data_list.pop(K - 1)
 
+# Вывод
+print(f"change data_list = {data_list}")
+print(f"sum of change data_list = {sum(data_list)}")
 
-print(data_list)
