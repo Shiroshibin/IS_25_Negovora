@@ -22,19 +22,25 @@ R = √((x^2 – x^1)^2 + (у^2 – y^1)^2)
 """
 
 # Генерим данные
-N = randint(5, 10)
+# N = randint(5, 10)
+N = 10
 L = randint(1, N - 1)
 K = randint(1, (L - 1) if L != 1 else 1)
-
-# Создаем список и заполняем его
-data_list = list()
-for i in range(0, N):
-    data_list.append(randint(0, 10))
-
-for i in range(L, K):
-    print(i)
 
 print(f"N = {N}")
 print(f"L = {L}")
 print(f"K = {K}")
+
+# Создаем список и заполняем его
+data_list = list()
+for i in range(0, N):
+    # data_list.append(randint(0, 10))
+    data_list.append(i)
+
+
+
+for i in range(K - 1 , L):
+    print(data_list[i])
+
+
 print(data_list)
